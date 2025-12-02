@@ -1,3 +1,67 @@
 :root {
-  --white: 
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(216, 15%, 48%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  background-color: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 1px);
+  /* 
+    height: calc(100vh - 1px);
+
+    - height: definisce l’altezza dell’elemento.
+    - calc(): funzione CSS che permette di eseguire calcoli matematici direttamente nelle proprietà.
+    - 100vh: significa 100% dell’altezza della viewport (cioè la finestra visibile del browser).
+    - - 1px: sottrae 1 pixel dall’altezza totale della viewport.
+
+    Risultato:
+    L’elemento occupa tutta l’altezza dello schermo, meno 1 pixel.
+    Utile per:
+    - Evitare scroll indesiderati (quando un elemento a 100vh crea una barra di scorrimento).
+    - Allineare perfettamente un box o una sezione con altri elementi che hanno bordi o outline.
+    - Gestire layout precisi senza sforare la viewport.
+
+    Nota editoriale:
+    Questo approccio è elegante perché unisce la flessibilità di unità relative (vh) 
+    con la precisione dei pixel, mantenendo il design responsivo e accurato.
+  */
+}
+
+.container {
+  background-color: var(--white);
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  /* 
+    box-shadow: proprietà che applica un’ombra al box.
+
+    Valori:
+    - 5px (primo valore) → offset orizzontale.
+      L’ombra è spostata di 5 pixel a destra.
+      Se fosse negativo (-5px), l’ombra andrebbe a sinistra.
+
+    - 5px (secondo valore) → offset verticale.
+      L’ombra è spostata di 5 pixel verso il basso.
+      Se fosse negativo (-5px), l’ombra salirebbe verso l’alto.
+
+    - 5px (terzo valore) → raggio di sfocatura (blur radius).
+      Più grande è il valore, più l’ombra diventa diffusa e morbida.
+      Con 0px l’ombra sarebbe netta e senza sfumatura.
+
+    - rgba(0, 0, 0, 0.3) → colore dell’ombra.
+      rgb(0,0,0) = nero puro.
+      a = 0.3 → opacità al 30%, quindi l’ombra è trasparente e delicata.
+      Questo rende l’effetto elegante e non invasivo.
+  */
 }
