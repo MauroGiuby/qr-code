@@ -5,6 +5,12 @@
   --dark-blue: hsl(218, 44%, 22%);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 img {
   max-width: 100%;
 }
@@ -37,13 +43,14 @@ body {
     Questo approccio è elegante perché unisce la flessibilità di unità relative (vh) 
     con la precisione dei pixel, mantenendo il design responsivo e accurato.
   */
+  margin: 1.25rem;
 }
 
 .container {
   background-color: var(--white);
   padding: 1.25rem;
   border-radius: 0.625rem;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
   /* 
     box-shadow: proprietà che applica un’ombra al box.
 
@@ -65,6 +72,12 @@ body {
       a = 0.3 → opacità al 30%, quindi l’ombra è trasparente e delicata.
       Questo rende l’effetto elegante e non invasivo.
   */
+  margin-bottom: 2rem;
+}
+
+.container img {
+  border-radius: 0.625rem;
+  margin-bottom: 1rem;
 }
 
 .attribution { 
